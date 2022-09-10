@@ -1,0 +1,27 @@
+.heading{
+    font-size: 3rem;
+    color: #666;
+}
+.heading span{
+    color: var(--red);
+    }
+.protect .heading{
+    text-align: center;
+    padding:1rem;
+}
+.protect .box-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.protect .box-container .box{
+    background: #fff;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    margin: 2rem;
+    width: 34rem;
+    border-radius: .5rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    text-align: center;
+}

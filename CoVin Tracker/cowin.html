@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="cowin.css">
+   
+    
+
+</head>
+<body onload="myFunction()">
+  <div class="loading">
+    <div class="loader">
+      <span><i></i></span>
+    </div>
+  </div>
+  
+  <section class="banner" id="banner">
+    <!-- for navbar -->
+  <div class="container">
+    <div class="navbar">
+      <div class="menu">
+        <h3 class="logo">Brand<span>Name</span></h3>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="main">
+        <header>
+          <div class="overlay">
+            <div class="inner">
+               <h2 class="title">India is set to defeat</h2>
+
+              <h2>Covid-19. Every Indian is</h2>
+              <h2>making it possible."</h2>
+              <p>- PM Narendra Modi
+              </p>
+              <!-- <button class="btn">Read more</button>  -->
+              
+            </div>
+          </div>
+        </header>
+        <ul id=list>
+        
+        
+        </ul>
+       </div> 
+
+      <div class="shadow one"></div>
+      <div class="shadow two"></div>
+    </div>
+
+    <div class="links">
+      <ul>
+        <li>
+          <a href="#" style="--i: 0.05s;">Home</a>
+        </li>
+        <li>
+          <a href="#" style="--i: 0.1s;">Services</a>
+        </li>
+        <li>
+          <a href="#" style="--i: 0.15s;">Portfolio</a>
+        </li>
+        <li>
+          <a href="#" style="--i: 0.2s;">Testimonials</a>
+        </li>
+        <li>
+          <a href="#" style="--i: 0.25s;">About</a>
+        </li>
+        <li>
+          <a href="#" style="--i: 0.3s;">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--completed navbar  -->
+    <!-- <div class="content">
+      <h2>"India is set to defeat
+      </h2>
+      <h2>Covid-19. Every Indian is</h2>
+      <h2>making it possible."</h2>
+      <p>- PM Narendra Modi
+      </p>
+    </div> -->
+  </section>
+    <input type="text" id=pin placeholder="Enter pin">
+    <!-- <input type="text"id=date> -->
+    <button id="search">Search</button>
+    <div id="table">
+      
+    </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+      <script>
+        var preloader = document.getElementsByClassName('loader')
+        function myFunction(){
+          preloader.style.display='none';
+        }
+      </script>
+      <script>
+        setTimeout(function(){
+          $('.loading').fadeToggle();
+        },0000);
+      </script>
+      <script>
+        const hamburger_menu = document.querySelector(".hamburger-menu");
+        const container = document.querySelector(".container");
+        hamburger_menu.addEventListener("click", () => {
+        container.classList.toggle("active");
+        });
+      </script>
+    
+    <script src="cowin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    
+</body>
+</html>
